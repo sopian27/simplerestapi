@@ -114,3 +114,147 @@
 2024-01-27T02:34:57.807+07:00 DEBUG 11680 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [image/avif, image/webp, */*] and supported [application/json, application/*+json]
 2024-01-27T02:34:57.808+07:00 DEBUG 11680 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat Jan 27 02:34:57 ICT 2024, status=404, error=Not Found, path=/favicon.ico}]
 2024-01-27T02:34:57.809+07:00 DEBUG 11680 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-01-27T02:47:29.564+07:00  INFO 19816 --- [main] com.simple.restapi.RestapiApplication    : Starting RestapiApplication using Java 17.0.3.1 with PID 19816 (F:\belajar\java\simplerestapi\target\classes started by riefk in F:\belajar\java\simplerestapi)
+2024-01-27T02:47:29.567+07:00 DEBUG 19816 --- [main] com.simple.restapi.RestapiApplication    : Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-01-27T02:47:29.569+07:00  INFO 19816 --- [main] com.simple.restapi.RestapiApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-01-27T02:47:31.330+07:00 DEBUG 19816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-01-27T02:47:31.407+07:00 DEBUG 19816 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-01-27T02:47:31.441+07:00 DEBUG 19816 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-01-27T02:47:31.484+07:00 DEBUG 19816 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-01-27T02:47:31.609+07:00  INFO 19816 --- [main] com.simple.restapi.RestapiApplication    : Started RestapiApplication in 2.644 seconds (process running for 3.271)
+2024-01-27T02:47:31.612+07:00 DEBUG 19816 --- [main] com.simple.restapi.RestapiApplication    : START--
+2024-01-27T02:47:35.567+07:00  INFO 19816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-27T02:47:35.567+07:00 DEBUG 19816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-01-27T02:47:35.567+07:00 DEBUG 19816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-01-27T02:47:35.567+07:00 DEBUG 19816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-01-27T02:47:35.569+07:00 DEBUG 19816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6cb613c1
+2024-01-27T02:47:35.570+07:00 DEBUG 19816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@e62beeb
+2024-01-27T02:47:35.570+07:00 DEBUG 19816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-01-27T02:47:35.570+07:00  INFO 19816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-01-27T02:47:35.582+07:00 DEBUG 19816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/customer/1", parameters={}
+2024-01-27T02:47:35.605+07:00 DEBUG 19816 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.restapi.controller.CustomerController#getCustomer(Long)
+2024-01-27T02:47:35.630+07:00 DEBUG 19816 --- [http-nio-8080-exec-1] c.s.r.controller.CustomerController      : 1 id
+2024-01-27T02:47:35.632+07:00 DEBUG 19816 --- [http-nio-8080-exec-1] c.s.r.controller.CustomerController      : CustomerDto(name=john doe, address=boston) customer
+2024-01-27T02:47:35.657+07:00 DEBUG 19816 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+2024-01-27T02:47:35.661+07:00 DEBUG 19816 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2024-01-27T02:47:35.663+07:00 DEBUG 19816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-01-27T10:55:20.677+07:00  INFO 14284 --- [main] com.simple.restapi.RestapiApplication    : Starting RestapiApplication using Java 17.0.3.1 with PID 14284 (F:\belajar\java\simplerestapi\target\classes started by riefk in F:\belajar\java\simplerestapi)
+2024-01-27T10:55:20.681+07:00 DEBUG 14284 --- [main] com.simple.restapi.RestapiApplication    : Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-01-27T10:55:20.683+07:00  INFO 14284 --- [main] com.simple.restapi.RestapiApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-01-27T10:55:23.600+07:00 DEBUG 14284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-01-27T10:55:23.727+07:00 DEBUG 14284 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-01-27T10:55:23.783+07:00 DEBUG 14284 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-01-27T10:55:23.858+07:00 DEBUG 14284 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-01-27T10:55:24.024+07:00  INFO 14284 --- [main] com.simple.restapi.RestapiApplication    : Started RestapiApplication in 4.505 seconds (process running for 5.602)
+2024-01-27T10:55:24.031+07:00 DEBUG 14284 --- [main] com.simple.restapi.RestapiApplication    : START--
+2024-01-27T10:56:28.556+07:00  INFO 14284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-27T10:56:28.563+07:00 DEBUG 14284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-01-27T10:56:28.564+07:00 DEBUG 14284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-01-27T10:56:28.564+07:00 DEBUG 14284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-01-27T10:56:28.569+07:00 DEBUG 14284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@626cc7a3
+2024-01-27T10:56:28.571+07:00 DEBUG 14284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@17af5ef4
+2024-01-27T10:56:28.572+07:00 DEBUG 14284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-01-27T10:56:28.574+07:00  INFO 14284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2024-01-27T10:56:28.623+07:00 DEBUG 14284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/customer/10", parameters={}
+2024-01-27T10:56:28.694+07:00 DEBUG 14284 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.restapi.controller.CustomerController#getCustomer(Long)
+2024-01-27T10:56:28.817+07:00 DEBUG 14284 --- [http-nio-8080-exec-1] c.s.r.controller.CustomerController      : 10 id
+2024-01-27T10:56:28.838+07:00 DEBUG 14284 --- [http-nio-8080-exec-1] c.s.r.controller.CustomerController      : CustomerDto(name=john doe, address=boston) customer
+2024-01-27T10:56:29.005+07:00 DEBUG 14284 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-01-27T10:56:29.018+07:00 DEBUG 14284 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2024-01-27T10:56:29.028+07:00 DEBUG 14284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-01-27T11:03:35.824+07:00  INFO 2592 --- [main] com.simple.restapi.RestapiApplication    : Starting RestapiApplication using Java 17.0.3.1 with PID 2592 (F:\belajar\java\simplerestapi\target\classes started by riefk in F:\belajar\java\simplerestapi)
+2024-01-27T11:03:35.833+07:00 DEBUG 2592 --- [main] com.simple.restapi.RestapiApplication    : Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-01-27T11:03:35.837+07:00  INFO 2592 --- [main] com.simple.restapi.RestapiApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-01-27T11:03:42.186+07:00 DEBUG 2592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-01-27T11:03:42.403+07:00 DEBUG 2592 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-01-27T11:03:42.498+07:00 DEBUG 2592 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-01-27T11:03:42.602+07:00 DEBUG 2592 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-01-27T11:03:42.875+07:00  INFO 2592 --- [main] com.simple.restapi.RestapiApplication    : Started RestapiApplication in 9.427 seconds (process running for 12.235)
+2024-01-27T11:03:42.883+07:00 DEBUG 2592 --- [main] com.simple.restapi.RestapiApplication    : START--
+2024-01-27T11:03:48.055+07:00  INFO 2592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-27T11:03:48.055+07:00 DEBUG 2592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-01-27T11:03:48.055+07:00 DEBUG 2592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-01-27T11:03:48.056+07:00 DEBUG 2592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-01-27T11:03:48.058+07:00 DEBUG 2592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@8f395cc
+2024-01-27T11:03:48.059+07:00 DEBUG 2592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@179cff42
+2024-01-27T11:03:48.061+07:00 DEBUG 2592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-01-27T11:03:48.063+07:00  INFO 2592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-01-27T11:03:48.081+07:00 DEBUG 2592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/customer/10", parameters={}
+2024-01-27T11:03:48.115+07:00 DEBUG 2592 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.restapi.controller.CustomerController#getCustomer(Long)
+2024-01-27T11:03:48.165+07:00 DEBUG 2592 --- [http-nio-8080-exec-1] c.s.r.controller.CustomerController      : 10 id
+2024-01-27T11:03:48.168+07:00 DEBUG 2592 --- [http-nio-8080-exec-1] c.s.r.controller.CustomerController      : CustomerDto(name=john doe, address=boston) customer
+2024-01-27T11:03:48.257+07:00 DEBUG 2592 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-01-27T11:03:48.265+07:00 DEBUG 2592 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [CustomerDto(name=john doe, address=boston)]
+2024-01-27T11:03:48.344+07:00 DEBUG 2592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-01-27T11:19:41.091+07:00  INFO 10864 --- [main] com.simple.restapi.RestapiApplication    : Starting RestapiApplication using Java 17.0.3.1 with PID 10864 (F:\belajar\java\simplerestapi\target\classes started by riefk in F:\belajar\java\simplerestapi)
+2024-01-27T11:19:41.097+07:00 DEBUG 10864 --- [main] com.simple.restapi.RestapiApplication    : Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-01-27T11:19:41.102+07:00  INFO 10864 --- [main] com.simple.restapi.RestapiApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-01-27T11:19:45.561+07:00 DEBUG 10864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-01-27T11:19:45.726+07:00 DEBUG 10864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-01-27T11:19:45.807+07:00 DEBUG 10864 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-01-27T11:19:45.898+07:00 DEBUG 10864 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-01-27T11:19:46.126+07:00  INFO 10864 --- [main] com.simple.restapi.RestapiApplication    : Started RestapiApplication in 7.507 seconds (process running for 10.329)
+2024-01-27T11:19:46.134+07:00 DEBUG 10864 --- [main] com.simple.restapi.RestapiApplication    : START--
+2024-01-27T11:19:51.771+07:00  INFO 10864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-27T11:19:51.772+07:00 DEBUG 10864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-01-27T11:19:51.772+07:00 DEBUG 10864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-01-27T11:19:51.772+07:00 DEBUG 10864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-01-27T11:19:51.774+07:00 DEBUG 10864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@198c4803
+2024-01-27T11:19:51.775+07:00 DEBUG 10864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2f08761
+2024-01-27T11:19:51.778+07:00 DEBUG 10864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-01-27T11:19:51.779+07:00  INFO 10864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-01-27T11:19:51.797+07:00 DEBUG 10864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/customer/10", parameters={}
+2024-01-27T11:19:51.833+07:00 DEBUG 10864 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.restapi.controller.CustomerController#getCustomer(Long)
+2024-01-27T11:19:51.874+07:00 DEBUG 10864 --- [http-nio-8080-exec-1] c.s.r.controller.CustomerController      : 10 id
+2024-01-27T11:19:51.880+07:00 DEBUG 10864 --- [http-nio-8080-exec-1] c.s.r.controller.CustomerController      : CustomerDto(name=john doe, address=boston) customer
+2024-01-27T11:19:51.983+07:00 DEBUG 10864 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-01-27T11:19:51.997+07:00 DEBUG 10864 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [CustomerDto(name=john doe, address=boston)]
+2024-01-27T11:19:52.051+07:00 DEBUG 10864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-01-27T11:24:08.819+07:00  INFO 16264 --- [main] com.simple.restapi.RestapiApplication    : Starting RestapiApplication using Java 17.0.3.1 with PID 16264 (F:\belajar\java\simplerestapi\target\classes started by riefk in F:\belajar\java\simplerestapi)
+2024-01-27T11:24:08.823+07:00 DEBUG 16264 --- [main] com.simple.restapi.RestapiApplication    : Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-01-27T11:24:08.830+07:00  INFO 16264 --- [main] com.simple.restapi.RestapiApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-01-27T11:24:17.646+07:00 DEBUG 16264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-01-27T11:24:17.960+07:00 DEBUG 16264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-01-27T11:24:18.081+07:00 DEBUG 16264 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-01-27T11:24:18.286+07:00 DEBUG 16264 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-01-27T11:24:18.745+07:00  INFO 16264 --- [main] com.simple.restapi.RestapiApplication    : Started RestapiApplication in 11.554 seconds (process running for 12.994)
+2024-01-27T11:24:18.761+07:00 DEBUG 16264 --- [main] com.simple.restapi.RestapiApplication    : START--
+2024-01-27T11:38:20.806+07:00  INFO 16264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-27T11:38:20.833+07:00 DEBUG 16264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-01-27T11:38:20.838+07:00 DEBUG 16264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-01-27T11:38:20.838+07:00 DEBUG 16264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-01-27T11:38:20.869+07:00 DEBUG 16264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2a3405cb
+2024-01-27T11:38:20.872+07:00 DEBUG 16264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@520b7e3c
+2024-01-27T11:38:20.874+07:00 DEBUG 16264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-01-27T11:38:20.875+07:00  INFO 16264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 49 ms
+2024-01-27T11:38:20.924+07:00 DEBUG 16264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/customer/10", parameters={}
+2024-01-27T11:38:21.004+07:00 DEBUG 16264 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.restapi.controller.CustomerController#getCustomer(Long)
+2024-01-27T11:38:21.143+07:00 DEBUG 16264 --- [http-nio-8080-exec-1] c.s.r.controller.CustomerController      : 10 id
+2024-01-27T11:38:21.156+07:00 DEBUG 16264 --- [http-nio-8080-exec-1] c.s.r.controller.CustomerController      : CustomerDto(name=john doe, address=boston) customer
+2024-01-27T11:38:21.311+07:00 DEBUG 16264 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-01-27T11:38:21.317+07:00 DEBUG 16264 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [CustomerDto(name=john doe, address=boston)]
+2024-01-27T11:38:21.393+07:00 DEBUG 16264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-01-27T11:43:37.390+07:00  INFO 7968 --- [main] com.simple.restapi.RestapiApplication    : Starting RestapiApplication using Java 17.0.3.1 with PID 7968 (F:\belajar\java\simplerestapi\target\classes started by riefk in F:\belajar\java\simplerestapi)
+2024-01-27T11:43:37.394+07:00 DEBUG 7968 --- [main] com.simple.restapi.RestapiApplication    : Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-01-27T11:43:37.396+07:00  INFO 7968 --- [main] com.simple.restapi.RestapiApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-01-27T11:43:41.042+07:00 DEBUG 7968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-01-27T11:43:41.250+07:00 DEBUG 7968 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-01-27T11:43:41.334+07:00 DEBUG 7968 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-01-27T11:43:41.434+07:00 DEBUG 7968 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-01-27T11:43:41.718+07:00  INFO 7968 --- [main] com.simple.restapi.RestapiApplication    : Started RestapiApplication in 5.384 seconds (process running for 6.468)
+2024-01-27T11:43:41.728+07:00 DEBUG 7968 --- [main] com.simple.restapi.RestapiApplication    : START--
+2024-01-27T11:43:46.460+07:00  INFO 7968 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-27T11:43:46.462+07:00 DEBUG 7968 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-01-27T11:43:46.464+07:00 DEBUG 7968 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-01-27T11:43:46.465+07:00 DEBUG 7968 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-01-27T11:43:46.468+07:00 DEBUG 7968 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@b109dbb
+2024-01-27T11:43:46.473+07:00 DEBUG 7968 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@66d3de35
+2024-01-27T11:43:46.477+07:00 DEBUG 7968 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-01-27T11:43:46.478+07:00  INFO 7968 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2024-01-27T11:43:46.531+07:00 DEBUG 7968 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/customer/10", parameters={}
+2024-01-27T11:43:46.703+07:00 DEBUG 7968 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.restapi.controller.CustomerController#getCustomer(Long)
+2024-01-27T11:43:47.357+07:00 DEBUG 7968 --- [http-nio-8080-exec-2] c.s.r.controller.CustomerController      : 10 id
+2024-01-27T11:43:47.384+07:00 DEBUG 7968 --- [http-nio-8080-exec-2] c.s.r.controller.CustomerController      : CustomerDto(name=john doe, address=boston) customer
+2024-01-27T11:43:48.236+07:00 DEBUG 7968 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-01-27T11:43:48.307+07:00 DEBUG 7968 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponse(status=200 OK, data=CustomerDto(name=john doe, address=boston))]
+2024-01-27T11:43:48.552+07:00 DEBUG 7968 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
