@@ -2,6 +2,7 @@ package com.simple.restapi.service;
 
 import com.simple.restapi.domain.Customer;
 import com.simple.restapi.dto.CustomerDto;
+import com.simple.restapi.exception.CustomerNotFoundException;
 import com.simple.restapi.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,6 +21,7 @@ public class CustomerService {
         customerDto.setName(customer.getName());
         customerDto.setAddress(customer.getAddress());
 
+        if(id !=10) throw new CustomerNotFoundException("Customer is not found");
         return customerDto;
     }
 }

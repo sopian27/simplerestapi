@@ -1,6 +1,7 @@
 package com.simple.restapi.controller;
 
 import com.simple.restapi.domain.User;
+import com.simple.restapi.exception.UserNotFoundException;
 import com.simple.restapi.request.LoginRequest;
 import com.simple.restapi.response.ErrorResponse;
 import com.simple.restapi.response.LoginResponse;
@@ -26,7 +27,7 @@ public class AuthController {
 
     @ResponseBody
     @RequestMapping(value = "/login",method = RequestMethod.POST)
-    public ResponseEntity login(@RequestBody LoginRequest loginReq)  {
+    public ResponseEntity login(@RequestBody LoginRequest loginReq)   {
 
         try {
             Authentication authentication =
@@ -39,11 +40,9 @@ public class AuthController {
             return ResponseEntity.ok(loginRes);
 
         }catch (BadCredentialsException e){
-            ErrorResponse errorResponse = new ErrorResponse(HttpStatus.BAD_REQUEST,"Invalid username or password");
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorResponse);
+            throw new UserNotFoundException("invalid username or password");
         }catch (Exception e){
-            ErrorResponse errorResponse = new ErrorResponse(HttpStatus.BAD_REQUEST, e.getMessage());
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorResponse);
+            throw new RuntimeException(e.getMessage());
         }
     }
 }

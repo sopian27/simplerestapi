@@ -755,3 +755,325 @@ Caused by: java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
 2024-01-27T18:44:47.472+07:00 DEBUG 2392 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
 2024-01-27T18:44:47.475+07:00 DEBUG 2392 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [LoginResponse(email=test@mail.com, token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QG1haWwuY29tIiwiZXhwIj (truncated)...]
 2024-01-27T18:44:47.480+07:00 DEBUG 2392 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-01-27T18:47:07.574+07:00  INFO 13444 --- [main] com.simple.restapi.RestapiApplication    : Starting RestapiApplication using Java 17.0.3.1 with PID 13444 (F:\belajar\java\simplerestapi\target\classes started by riefk in F:\belajar\java\simplerestapi)
+2024-01-27T18:47:07.580+07:00 DEBUG 13444 --- [main] com.simple.restapi.RestapiApplication    : Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-01-27T18:47:07.583+07:00  INFO 13444 --- [main] com.simple.restapi.RestapiApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-01-27T18:47:11.513+07:00 DEBUG 13444 --- [main] c.s.r.auth.JwtAuthenticationFilter       : Filter 'jwtAuthenticationFilter' configured for use
+2024-01-27T18:47:12.076+07:00 DEBUG 13444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-01-27T18:47:12.157+07:00 DEBUG 13444 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-01-27T18:47:12.469+07:00 DEBUG 13444 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-01-27T18:47:12.549+07:00 DEBUG 13444 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-01-27T18:47:12.761+07:00  INFO 13444 --- [main] com.simple.restapi.RestapiApplication    : Started RestapiApplication in 6.555 seconds (process running for 7.772)
+2024-01-27T18:47:12.769+07:00 DEBUG 13444 --- [main] com.simple.restapi.RestapiApplication    : START--
+2024-01-27T18:47:21.106+07:00  INFO 13444 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-27T18:47:21.107+07:00 DEBUG 13444 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-01-27T18:47:21.107+07:00 DEBUG 13444 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-01-27T18:47:21.107+07:00 DEBUG 13444 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-01-27T18:47:21.108+07:00 DEBUG 13444 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5804ed68
+2024-01-27T18:47:21.109+07:00 DEBUG 13444 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6ea35a6
+2024-01-27T18:47:21.110+07:00 DEBUG 13444 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-01-27T18:47:21.110+07:00  INFO 13444 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-01-27T18:47:21.209+07:00 DEBUG 13444 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/auth/v1/login", parameters={}
+2024-01-27T18:47:21.210+07:00 DEBUG 13444 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.restapi.controller.AuthController#login(LoginRequest)
+2024-01-27T18:47:21.363+07:00 DEBUG 13444 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [LoginRequest(email=test@mail.com, password=12345)]
+2024-01-27T18:47:21.448+07:00 DEBUG 13444 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-01-27T18:47:21.456+07:00 DEBUG 13444 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ErrorResponse(status=400 BAD_REQUEST, message=Invalid username or password)]
+2024-01-27T18:47:21.476+07:00 DEBUG 13444 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2024-01-27T18:47:30.387+07:00 DEBUG 13444 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/auth/v1/login", parameters={}
+2024-01-27T18:47:30.388+07:00 DEBUG 13444 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.restapi.controller.AuthController#login(LoginRequest)
+2024-01-27T18:47:30.392+07:00 DEBUG 13444 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [LoginRequest(email=test@mail.com, password=123456)]
+2024-01-27T18:47:30.470+07:00 DEBUG 13444 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-01-27T18:47:30.471+07:00 DEBUG 13444 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [LoginResponse(email=test@mail.com, token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QG1haWwuY29tIiwiZXhwIj (truncated)...]
+2024-01-27T18:47:30.480+07:00 DEBUG 13444 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-01-27T18:48:09.163+07:00 DEBUG 13444 --- [http-nio-8080-exec-8] c.s.r.auth.JwtAuthenticationFilter       : token : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QG1haWwuY29tIiwiZXhwIjoxOTIyMzU2MDUwfQ.RZY8BlY8HEZG8X9anvfT-2iICdwlV8i9HtugJF_8n3E
+2024-01-27T18:48:09.221+07:00 DEBUG 13444 --- [http-nio-8080-exec-8] c.s.r.auth.JwtAuthenticationFilter       : email : test@mail.com
+2024-01-27T18:48:09.223+07:00 DEBUG 13444 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/customer/10", parameters={}
+2024-01-27T18:48:09.225+07:00 DEBUG 13444 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.restapi.controller.CustomerController#getCustomer(Long)
+2024-01-27T18:48:09.251+07:00 DEBUG 13444 --- [http-nio-8080-exec-8] c.s.r.controller.CustomerController      : payload 10
+2024-01-27T18:48:09.261+07:00 DEBUG 13444 --- [http-nio-8080-exec-8] c.s.r.controller.CustomerController      : customer CustomerDto(name=john doe, address=boston)
+2024-01-27T18:48:09.274+07:00 DEBUG 13444 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-01-27T18:48:09.280+07:00 DEBUG 13444 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponse(status=200 OK, data=CustomerDto(name=john doe, address=boston))]
+2024-01-27T18:48:09.287+07:00 DEBUG 13444 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-01-27T19:21:33.607+07:00  INFO 10036 --- [main] com.simple.restapi.RestapiApplication    : Starting RestapiApplication using Java 17.0.3.1 with PID 10036 (F:\belajar\java\simplerestapi\target\classes started by riefk in F:\belajar\java\simplerestapi)
+2024-01-27T19:21:33.613+07:00 DEBUG 10036 --- [main] com.simple.restapi.RestapiApplication    : Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-01-27T19:21:33.616+07:00  INFO 10036 --- [main] com.simple.restapi.RestapiApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-01-27T19:21:37.997+07:00 DEBUG 10036 --- [main] c.s.r.auth.JwtAuthenticationFilter       : Filter 'jwtAuthenticationFilter' configured for use
+2024-01-27T19:21:38.660+07:00 DEBUG 10036 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-01-27T19:21:38.746+07:00 DEBUG 10036 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-01-27T19:21:39.098+07:00 DEBUG 10036 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-01-27T19:21:39.191+07:00 DEBUG 10036 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-01-27T19:21:39.422+07:00  INFO 10036 --- [main] com.simple.restapi.RestapiApplication    : Started RestapiApplication in 7.363 seconds (process running for 8.789)
+2024-01-27T19:21:39.431+07:00 DEBUG 10036 --- [main] com.simple.restapi.RestapiApplication    : START--
+2024-01-27T19:21:49.110+07:00  INFO 10036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-27T19:21:49.111+07:00 DEBUG 10036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-01-27T19:21:49.112+07:00 DEBUG 10036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-01-27T19:21:49.113+07:00 DEBUG 10036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-01-27T19:21:49.115+07:00 DEBUG 10036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6ea35a6
+2024-01-27T19:21:49.116+07:00 DEBUG 10036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4dbc2364
+2024-01-27T19:21:49.117+07:00 DEBUG 10036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-01-27T19:21:49.118+07:00  INFO 10036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-01-27T19:21:49.249+07:00 DEBUG 10036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/auth/v1/login", parameters={}
+2024-01-27T19:21:49.253+07:00 DEBUG 10036 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.restapi.controller.AuthController#login(LoginRequest)
+2024-01-27T19:21:49.572+07:00 DEBUG 10036 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [LoginRequest(email=test@mail.com, password=123456)]
+2024-01-27T19:21:49.749+07:00 DEBUG 10036 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-01-27T19:21:49.752+07:00 DEBUG 10036 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [LoginResponse(email=test@mail.com, token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QG1haWwuY29tIiwiZXhwIj (truncated)...]
+2024-01-27T19:21:49.778+07:00 DEBUG 10036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-01-27T19:22:08.847+07:00 DEBUG 10036 --- [http-nio-8080-exec-4] c.s.r.auth.JwtAuthenticationFilter       : token : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QG1haWwuY29tIiwiZXhwIjoxOTIyMzU4MTA5fQ.okoxMeGkyY6H0faycLGZoMdUJDq9ggK4AYvGojvpIqc
+2024-01-27T19:22:08.892+07:00 DEBUG 10036 --- [http-nio-8080-exec-4] c.s.r.auth.JwtAuthenticationFilter       : email : test@mail.com
+2024-01-27T19:22:08.894+07:00 DEBUG 10036 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/customer/10", parameters={}
+2024-01-27T19:22:08.897+07:00 DEBUG 10036 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.restapi.controller.CustomerController#getCustomer(Long)
+2024-01-27T19:22:08.906+07:00 DEBUG 10036 --- [http-nio-8080-exec-4] c.s.r.controller.CustomerController      : payload 10
+2024-01-27T19:22:08.918+07:00 DEBUG 10036 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.ArithmeticException: / by zero
+2024-01-27T19:22:08.925+07:00 ERROR 10036 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.ArithmeticException: / by zero] with root cause
+
+java.lang.ArithmeticException: / by zero
+	at com.simple.restapi.service.CustomerService.getCustomer(CustomerService.java:23) ~[classes/:na]
+	at com.simple.restapi.controller.CustomerController.getCustomer(CustomerController.java:27) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:261) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:189) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:117) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at com.simple.restapi.auth.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:71) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225) ~[spring-security-config-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-01-27T19:27:07.136+07:00  INFO 15392 --- [main] com.simple.restapi.RestapiApplication    : Starting RestapiApplication using Java 17.0.3.1 with PID 15392 (F:\belajar\java\simplerestapi\target\classes started by riefk in F:\belajar\java\simplerestapi)
+2024-01-27T19:27:07.146+07:00 DEBUG 15392 --- [main] com.simple.restapi.RestapiApplication    : Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-01-27T19:27:07.153+07:00  INFO 15392 --- [main] com.simple.restapi.RestapiApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-01-27T19:27:14.508+07:00 DEBUG 15392 --- [main] c.s.r.auth.JwtAuthenticationFilter       : Filter 'jwtAuthenticationFilter' configured for use
+2024-01-27T19:27:15.260+07:00 DEBUG 15392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-01-27T19:27:15.357+07:00 DEBUG 15392 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-01-27T19:27:15.750+07:00 DEBUG 15392 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-01-27T19:27:15.848+07:00 DEBUG 15392 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-01-27T19:27:16.072+07:00  INFO 15392 --- [main] com.simple.restapi.RestapiApplication    : Started RestapiApplication in 11.638 seconds (process running for 14.804)
+2024-01-27T19:27:16.082+07:00 DEBUG 15392 --- [main] com.simple.restapi.RestapiApplication    : START--
+2024-01-27T19:27:28.729+07:00  INFO 15392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-27T19:27:28.731+07:00 DEBUG 15392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-01-27T19:27:28.732+07:00 DEBUG 15392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-01-27T19:27:28.732+07:00 DEBUG 15392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-01-27T19:27:28.735+07:00 DEBUG 15392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2771ab67
+2024-01-27T19:27:28.739+07:00 DEBUG 15392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@eab6a77
+2024-01-27T19:27:28.740+07:00 DEBUG 15392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-01-27T19:27:28.741+07:00  INFO 15392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2024-01-27T19:27:28.851+07:00 DEBUG 15392 --- [http-nio-8080-exec-1] c.s.r.auth.JwtAuthenticationFilter       : token : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QG1haWwuY29tIiwiZXhwIjoxOTIyMzU4MTA5fQ.okoxMeGkyY6H0faycLGZoMdUJDq9ggK4AYvGojvpIqc
+2024-01-27T19:27:28.965+07:00 DEBUG 15392 --- [http-nio-8080-exec-1] c.s.r.auth.JwtAuthenticationFilter       : email : test@mail.com
+2024-01-27T19:27:28.999+07:00 DEBUG 15392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/customer/10", parameters={}
+2024-01-27T19:27:29.005+07:00 DEBUG 15392 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.restapi.controller.CustomerController#getCustomer(Long)
+2024-01-27T19:27:29.055+07:00 DEBUG 15392 --- [http-nio-8080-exec-1] c.s.r.controller.CustomerController      : payload 10
+2024-01-27T19:27:29.064+07:00 DEBUG 15392 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.simple.restapi.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2024-01-27T19:27:29.088+07:00 DEBUG 15392 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-01-27T19:27:29.091+07:00 DEBUG 15392 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["/ by zero"]
+2024-01-27T19:27:29.107+07:00 DEBUG 15392 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ArithmeticException: / by zero]
+2024-01-27T19:27:29.109+07:00 DEBUG 15392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-01-27T19:32:14.082+07:00  INFO 12080 --- [main] com.simple.restapi.RestapiApplication    : Starting RestapiApplication using Java 17.0.3.1 with PID 12080 (F:\belajar\java\simplerestapi\target\classes started by riefk in F:\belajar\java\simplerestapi)
+2024-01-27T19:32:14.088+07:00 DEBUG 12080 --- [main] com.simple.restapi.RestapiApplication    : Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-01-27T19:32:14.090+07:00  INFO 12080 --- [main] com.simple.restapi.RestapiApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-01-27T19:32:17.394+07:00 DEBUG 12080 --- [main] c.s.r.auth.JwtAuthenticationFilter       : Filter 'jwtAuthenticationFilter' configured for use
+2024-01-27T19:32:18.039+07:00 DEBUG 12080 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-01-27T19:32:18.123+07:00 DEBUG 12080 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-01-27T19:32:18.466+07:00 DEBUG 12080 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-01-27T19:32:18.539+07:00 DEBUG 12080 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-01-27T19:32:18.722+07:00  INFO 12080 --- [main] com.simple.restapi.RestapiApplication    : Started RestapiApplication in 5.892 seconds (process running for 7.078)
+2024-01-27T19:32:18.731+07:00 DEBUG 12080 --- [main] com.simple.restapi.RestapiApplication    : START--
+2024-01-27T19:32:51.202+07:00  INFO 12080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-27T19:32:51.203+07:00 DEBUG 12080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-01-27T19:32:51.204+07:00 DEBUG 12080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-01-27T19:32:51.204+07:00 DEBUG 12080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-01-27T19:32:51.206+07:00 DEBUG 12080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@261ebaa0
+2024-01-27T19:32:51.206+07:00 DEBUG 12080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2456756b
+2024-01-27T19:32:51.207+07:00 DEBUG 12080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-01-27T19:32:51.207+07:00  INFO 12080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-01-27T19:32:51.290+07:00 DEBUG 12080 --- [http-nio-8080-exec-1] c.s.r.auth.JwtAuthenticationFilter       : token : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QG1haWwuY29tIiwiZXhwIjoxOTIyMzU4MTA5fQ.okoxMeGkyY6H0faycLGZoMdUJDq9ggK4AYvGojvpIqc
+2024-01-27T19:32:51.414+07:00 DEBUG 12080 --- [http-nio-8080-exec-1] c.s.r.auth.JwtAuthenticationFilter       : email : test@mail.com
+2024-01-27T19:32:51.465+07:00 DEBUG 12080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/customer/10", parameters={}
+2024-01-27T19:32:51.472+07:00 DEBUG 12080 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.restapi.controller.CustomerController#getCustomer(Long)
+2024-01-27T19:32:51.547+07:00 DEBUG 12080 --- [http-nio-8080-exec-1] c.s.r.controller.CustomerController      : payload 10
+2024-01-27T19:32:51.553+07:00 DEBUG 12080 --- [http-nio-8080-exec-1] c.s.r.controller.CustomerController      : customer CustomerDto(name=john doe, address=boston)
+2024-01-27T19:32:51.682+07:00 DEBUG 12080 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-01-27T19:32:51.695+07:00 DEBUG 12080 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponse(status=200 OK, data=CustomerDto(name=john doe, address=boston))]
+2024-01-27T19:32:51.748+07:00 DEBUG 12080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-01-27T19:32:59.012+07:00 DEBUG 12080 --- [http-nio-8080-exec-2] c.s.r.auth.JwtAuthenticationFilter       : token : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QG1haWwuY29tIiwiZXhwIjoxOTIyMzU4MTA5fQ.okoxMeGkyY6H0faycLGZoMdUJDq9ggK4AYvGojvpIqc
+2024-01-27T19:32:59.013+07:00 DEBUG 12080 --- [http-nio-8080-exec-2] c.s.r.auth.JwtAuthenticationFilter       : email : test@mail.com
+2024-01-27T19:32:59.015+07:00 DEBUG 12080 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/customer/11", parameters={}
+2024-01-27T19:32:59.042+07:00 DEBUG 12080 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.restapi.controller.CustomerController#getCustomer(Long)
+2024-01-27T19:32:59.043+07:00 DEBUG 12080 --- [http-nio-8080-exec-2] c.s.r.controller.CustomerController      : payload 11
+2024-01-27T19:32:59.051+07:00 DEBUG 12080 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.simple.restapi.exception.GlobalExceptionHandler#handleCustomerNotFoundException(RuntimeException)
+2024-01-27T19:32:59.053+07:00 DEBUG 12080 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-01-27T19:32:59.054+07:00 DEBUG 12080 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Customer is not found"]
+2024-01-27T19:32:59.062+07:00 DEBUG 12080 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.simple.restapi.exception.CustomerNotFoundException: Customer is not found]
+2024-01-27T19:32:59.062+07:00 DEBUG 12080 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-01-27T19:39:02.489+07:00  INFO 8332 --- [main] com.simple.restapi.RestapiApplication    : Starting RestapiApplication using Java 17.0.3.1 with PID 8332 (F:\belajar\java\simplerestapi\target\classes started by riefk in F:\belajar\java\simplerestapi)
+2024-01-27T19:39:02.494+07:00 DEBUG 8332 --- [main] com.simple.restapi.RestapiApplication    : Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-01-27T19:39:02.497+07:00  INFO 8332 --- [main] com.simple.restapi.RestapiApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-01-27T19:39:06.256+07:00 DEBUG 8332 --- [main] c.s.r.auth.JwtAuthenticationFilter       : Filter 'jwtAuthenticationFilter' configured for use
+2024-01-27T19:39:06.772+07:00 DEBUG 8332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-01-27T19:39:06.841+07:00 DEBUG 8332 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-01-27T19:39:07.122+07:00 DEBUG 8332 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-01-27T19:39:07.220+07:00 DEBUG 8332 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-01-27T19:39:07.498+07:00  INFO 8332 --- [main] com.simple.restapi.RestapiApplication    : Started RestapiApplication in 6.519 seconds (process running for 9.521)
+2024-01-27T19:39:07.505+07:00 DEBUG 8332 --- [main] com.simple.restapi.RestapiApplication    : START--
+2024-01-27T19:39:19.877+07:00  INFO 8332 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-27T19:39:19.878+07:00 DEBUG 8332 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-01-27T19:39:19.880+07:00 DEBUG 8332 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-01-27T19:39:19.881+07:00 DEBUG 8332 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-01-27T19:39:19.884+07:00 DEBUG 8332 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1968e9e5
+2024-01-27T19:39:19.885+07:00 DEBUG 8332 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@263e7a0b
+2024-01-27T19:39:19.886+07:00 DEBUG 8332 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-01-27T19:39:19.887+07:00  INFO 8332 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2024-01-27T19:39:19.986+07:00 DEBUG 8332 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/auth/v1/login", parameters={}
+2024-01-27T19:39:19.992+07:00 DEBUG 8332 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.restapi.controller.AuthController#login(LoginRequest)
+2024-01-27T19:39:20.206+07:00 DEBUG 8332 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [LoginRequest(email=test@mail.com, password=123456j)]
+2024-01-27T19:39:20.241+07:00 DEBUG 8332 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.simple.restapi.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2024-01-27T19:39:20.260+07:00 DEBUG 8332 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-01-27T19:39:20.261+07:00 DEBUG 8332 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Bad credentials"]
+2024-01-27T19:39:20.274+07:00 DEBUG 8332 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2024-01-27T19:39:20.275+07:00 DEBUG 8332 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-01-27T19:40:22.544+07:00  INFO 14512 --- [main] com.simple.restapi.RestapiApplication    : Starting RestapiApplication using Java 17.0.3.1 with PID 14512 (F:\belajar\java\simplerestapi\target\classes started by riefk in F:\belajar\java\simplerestapi)
+2024-01-27T19:40:22.548+07:00 DEBUG 14512 --- [main] com.simple.restapi.RestapiApplication    : Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-01-27T19:40:22.550+07:00  INFO 14512 --- [main] com.simple.restapi.RestapiApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-01-27T19:40:25.512+07:00 DEBUG 14512 --- [main] c.s.r.auth.JwtAuthenticationFilter       : Filter 'jwtAuthenticationFilter' configured for use
+2024-01-27T19:40:25.973+07:00 DEBUG 14512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-01-27T19:40:26.030+07:00 DEBUG 14512 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-01-27T19:40:26.311+07:00 DEBUG 14512 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-01-27T19:40:26.386+07:00 DEBUG 14512 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-01-27T19:40:26.558+07:00  INFO 14512 --- [main] com.simple.restapi.RestapiApplication    : Started RestapiApplication in 4.965 seconds (process running for 5.809)
+2024-01-27T19:40:26.564+07:00 DEBUG 14512 --- [main] com.simple.restapi.RestapiApplication    : START--
+2024-01-27T19:40:45.007+07:00  INFO 14512 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-27T19:40:45.009+07:00 DEBUG 14512 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-01-27T19:40:45.012+07:00 DEBUG 14512 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-01-27T19:40:45.013+07:00 DEBUG 14512 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-01-27T19:40:45.018+07:00 DEBUG 14512 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@643111e3
+2024-01-27T19:40:45.020+07:00 DEBUG 14512 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1dd22a6a
+2024-01-27T19:40:45.022+07:00 DEBUG 14512 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-01-27T19:40:45.023+07:00  INFO 14512 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2024-01-27T19:40:45.302+07:00 DEBUG 14512 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/auth/v1/login", parameters={}
+2024-01-27T19:40:45.318+07:00 DEBUG 14512 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.restapi.controller.AuthController#login(LoginRequest)
+2024-01-27T19:40:45.988+07:00 DEBUG 14512 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [LoginRequest(email=test@mail.com, password=123456j)]
+2024-01-27T19:40:46.078+07:00 DEBUG 14512 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.simple.restapi.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2024-01-27T19:40:46.136+07:00 DEBUG 14512 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-01-27T19:40:46.147+07:00 DEBUG 14512 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Bad credentials"]
+2024-01-27T19:40:46.192+07:00 DEBUG 14512 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2024-01-27T19:40:46.197+07:00 DEBUG 14512 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-01-27T19:43:15.535+07:00  INFO 14960 --- [main] com.simple.restapi.RestapiApplication    : Starting RestapiApplication using Java 17.0.3.1 with PID 14960 (F:\belajar\java\simplerestapi\target\classes started by riefk in F:\belajar\java\simplerestapi)
+2024-01-27T19:43:15.539+07:00 DEBUG 14960 --- [main] com.simple.restapi.RestapiApplication    : Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-01-27T19:43:15.541+07:00  INFO 14960 --- [main] com.simple.restapi.RestapiApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-01-27T19:43:18.733+07:00 DEBUG 14960 --- [main] c.s.r.auth.JwtAuthenticationFilter       : Filter 'jwtAuthenticationFilter' configured for use
+2024-01-27T19:43:19.253+07:00 DEBUG 14960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-01-27T19:43:19.321+07:00 DEBUG 14960 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-01-27T19:43:19.632+07:00 DEBUG 14960 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-01-27T19:43:19.716+07:00 DEBUG 14960 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-01-27T19:43:19.904+07:00  INFO 14960 --- [main] com.simple.restapi.RestapiApplication    : Started RestapiApplication in 5.312 seconds (process running for 6.164)
+2024-01-27T19:43:19.912+07:00 DEBUG 14960 --- [main] com.simple.restapi.RestapiApplication    : START--
+2024-01-27T19:43:24.267+07:00  INFO 14960 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-27T19:43:24.268+07:00 DEBUG 14960 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-01-27T19:43:24.269+07:00 DEBUG 14960 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-01-27T19:43:24.269+07:00 DEBUG 14960 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-01-27T19:43:24.272+07:00 DEBUG 14960 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@11d9c9f4
+2024-01-27T19:43:24.273+07:00 DEBUG 14960 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@57cb3c2d
+2024-01-27T19:43:24.273+07:00 DEBUG 14960 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-01-27T19:43:24.274+07:00  INFO 14960 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2024-01-27T19:43:24.408+07:00 DEBUG 14960 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/auth/v1/login", parameters={}
+2024-01-27T19:43:24.416+07:00 DEBUG 14960 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.simple.restapi.controller.AuthController#login(LoginRequest)
+2024-01-27T19:43:24.898+07:00 DEBUG 14960 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [LoginRequest(email=test@mail.com, password=123456j)]
+2024-01-27T19:43:25.167+07:00 DEBUG 14960 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.simple.restapi.exception.GlobalExceptionHandler#handleUserNotFoundException(UserNotFoundException)
+2024-01-27T19:43:25.289+07:00 DEBUG 14960 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-01-27T19:43:25.301+07:00 DEBUG 14960 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["invalid username or password"]
+2024-01-27T19:43:25.354+07:00 DEBUG 14960 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.simple.restapi.exception.UserNotFoundException: invalid username or password]
+2024-01-27T19:43:25.360+07:00 DEBUG 14960 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
