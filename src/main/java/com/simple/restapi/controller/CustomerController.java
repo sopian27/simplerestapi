@@ -23,9 +23,9 @@ public class CustomerController {
 
     @GetMapping("/{id}")
     public ResponseEntity<ApiResponse> getCustomer(@PathVariable("id") Long id){
-        log.debug("{} id",id);
+        log.debug("payload {}",id);
         CustomerDto customer = customerService.getCustomer(id);
-        log.debug("{} customer",customer);
+        log.debug("customer {}",customer);
 
         return ResponseEntity.ok().
                 body(new ApiResponse(HttpStatus.OK,customer));
