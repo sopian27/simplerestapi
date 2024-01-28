@@ -15,6 +15,7 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @Tag(name = "Authentications", description = "Auth management APIs")
@@ -29,7 +30,7 @@ public class AuthController {
 
     @ResponseBody
     @RequestMapping(value = "/login",method = RequestMethod.POST)
-    public ResponseEntity login(@RequestBody LoginRequest loginReq)   {
+    public ResponseEntity login(@Validated @RequestBody LoginRequest loginReq)   {
 
         try {
             Authentication authentication =
