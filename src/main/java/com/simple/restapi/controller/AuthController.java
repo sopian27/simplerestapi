@@ -6,6 +6,7 @@ import com.simple.restapi.request.LoginRequest;
 import com.simple.restapi.response.ErrorResponse;
 import com.simple.restapi.response.LoginResponse;
 import com.simple.restapi.util.JwtUtil;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +17,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+@Tag(name = "Authentications", description = "Auth management APIs")
 @Controller
 @RequestMapping("/auth/v1")
 public class AuthController {
